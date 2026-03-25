@@ -211,10 +211,6 @@ opacity: 1;
   height: 100%;
 }
 
-.title{
-  margin-bottom: 16px;
-}
-
 .content__list-container{
   position: relative;
   height: 300px;
@@ -232,6 +228,7 @@ opacity: 1;
   line-height: 94%;
   text-transform: uppercase;
   color: #FFFFFF;
+  margin-bottom: 26px;
 }
 
 .content__accent{
