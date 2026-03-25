@@ -64,6 +64,7 @@ ol {
 
 /*секция result*/
 .result__video-container{
+  position: relative;
   height: 386px;
   margin-bottom: 16px;
   display: flex;
@@ -90,6 +91,120 @@ ol {
   color: #FFFFFF;
 }
 
+.search-form__checkbox-list{
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}
+
+.search-form__fieldset{
+  border: 0;
+  
+}
+
+.search-form__label{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: fit-content;
+  gap: 5px;
+}
+
+/*стилизация поле ввода*/
+.search-form__label input[type="text"]{
+  padding: 0px;
+  gap: 10px;
+  width: 225px;
+  height: 27px;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #FFFFFF;
+  color: #FFFFFF;
+  background-color: #1B1919;
+  appearance: none;
+  margin-top: 5px;
+}
+
+.search-form__label input[type="text"]:focus {
+  outline: none;
+}
+
+.search-form__label input[type="text"]:has(:focus-visible) {/*TODO фокус вообще пропал и не появлятся в focus-visible*/
+  outline: 2px solid #FFFFFF;
+}
+
+.search-form__label::placeholder{
+  color: rgb(255 255 255 / 0.7);
+}
+
+/*стилизация чекбоксов*/
+.search-form__pseudo-checkbox{
+  width: 19px;
+  height: 19px;
+  border: 1px solid #FFFFFF;
+  padding: 1px;
+}
+
+.search-form__pseudo-checkbox::after{
+  content: "";
+  display: block;
+  background-color: #FFFFFF;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.search-form__label input[type="checkbox"]:checked + .search-form__pseudo-checkbox::after {
+opacity: 1;
+}
+
+.search-form__checkbox-list :hover {
+  text-decoration: underline;
+}
+
+
+.search-form__label input[type="checkbox"]:focus{
+  outline: none;
+}
+
+.search-form__label input[type="checkbox"]:has(:focus-visible){
+  outline: 2px solid #FFFFFF;
+}
+
+/*стилизация кнопки */
+.button{
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  font-family: 'Fira Sans Condensed';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.search-form__submit-button{
+  width: 194px;
+  height: 34px;
+  align-self: end;
+}
+
+.more-button{
+  width: 100%;
+}
+
+.button:hover{
+  text-decoration: underline;
+}
+
+.button:active{
+  background-color: #545050;
+}
+
+.button:focus-visible{
+  outline: 2px solid #FFFFFF;
+}
+
 /*секция content__details*/
 .content__details{
   width: 100%;
@@ -100,8 +215,8 @@ ol {
   margin-bottom: 16px;
 }
 
-
 .content__list-container{
+  position: relative;
   height: 300px;
   overflow: auto;
   gap: 30px;
@@ -123,11 +238,7 @@ ol {
   color: #545050;
 }
 
-
-
-
 /*теймпл контент видео карточка*/
-
 .content__list{
   display: flex;
   flex-direction: column;
@@ -150,7 +261,6 @@ ol {
 .content__video-card-description-container{
   flex-grow: 1;
 }
-
 
 .content__card-link{
   text-decoration: none;
@@ -181,3 +291,46 @@ ol {
   line-clamp: 1;
   text-transform: uppercase;
 }
+
+/*скрытие*/
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+} 
+
+.content__card-link{
+  display: block;
+}
+
+/*выбранная карточка*/
+.content__card-link_current{
+  background-color: #545050;
+}
+/*написанно добавить выбранной карточке цвет но не особо понято какой и на макеете 
+в дефолтном состоянии тоже не видно что бы ывбранная карточка выделялась*/
+
+.content__card-link:active{
+  background-color: #545050;
+}
+
+.content__card-link:hover{
+  text-decoration: underline;
+}
+
+.content__card-link:focus{
+  outline: none;
+}
+
+.content__card-link:focus-visible{
+  outline: 2px solid #FFFFFF;
+}
+
+.content__list-item{
+  padding: 0 3px;
+}
+
