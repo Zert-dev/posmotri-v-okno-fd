@@ -12,6 +12,9 @@ html {
   display: flex;
   justify-content: center;
   margin: auto;
+  display: flex;
+  justify-content: center;
+  margin: auto;
   inline-size: 1200px;
   block-size: 100%;
   color: #fff;
