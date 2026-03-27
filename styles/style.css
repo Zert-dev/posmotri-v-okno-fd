@@ -111,7 +111,7 @@ ol {
 }
 
 /*стилизация поле ввода*/
-.search-form__text-input {
+.search-form__textfield {
   margin-top: 5px;
   padding: 0px;
   gap: 10px;
@@ -130,14 +130,14 @@ ol {
   line-height: 22px;
 }
 
-.search-form__label :focus {
+.search-form__textfield:focus {
   outline: none;
 }
 
 .search-form__label:has(:focus-visible) {
   outline: 2px solid #FFFFFF;
   outline-offset: 2px;
-}
+} 
 
 .search-form__label::placeholder {
   color: rgb(255 255 255 / 0.7);
@@ -165,6 +165,10 @@ opacity: 1;
 
 .search-form__checkbox-list :hover {
   text-decoration: underline;
+}
+
+.search-form__checkbox:focus {
+  outline: none;
 }
 
 /*стилизация кнопки */
@@ -274,9 +278,9 @@ opacity: 1;
   line-clamp: 1;
   white-space: nowrap;
   overflow: hidden;
-  max-width: 711px;
+  max-width: 196px;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   -webkit-box-orient: vertical;
 }
 
