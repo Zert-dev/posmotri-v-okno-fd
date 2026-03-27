@@ -12,16 +12,13 @@ html {
   display: flex;
   justify-content: center;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  margin: auto;
   inline-size: 1200px;
   block-size: 100%;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
-  align-items: center; 
+  align-items: center;
 }
 
 h1,
@@ -65,11 +62,11 @@ ol {
   gap: 32px;
 }
 
-.details{
+.details {
   width: 399px;
 }
 
-.result{
+.result {
   width: 711px;
 }
 
