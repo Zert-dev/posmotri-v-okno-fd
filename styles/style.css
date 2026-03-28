@@ -62,10 +62,6 @@ ol {
   gap: 32px;
 }
 
-.details {
-  width: 399px;
-}
-
 .result {
   width: 711px;
 }
@@ -80,6 +76,7 @@ ol {
 
 .result__video {
   object-fit: cover;
+  width: 100%;
 }
 
 /*секция search-form*/
@@ -120,7 +117,6 @@ ol {
 
 /*стилизация поле ввода*/
 .search-form__textfield {
-  margin-top: 5px;
   padding: 0px;
   gap: 10px;
   width: 225px;
@@ -143,7 +139,7 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
-  outline: 2px solid #FFFFFF;
+  outline: 1px solid #FFFFFF;
   outline-offset: 2px;
 } 
 
@@ -215,13 +211,13 @@ opacity: 1;
 }
 
 .button:focus-visible {
-  outline: 2px solid #FFFFFF;
+  outline: 1px solid #FFFFFF;
   outline-offset: 2px;
 }
 
 /*секция content__details*/
 .content__details {
-  width: 100%;
+  width: 399px;
   height: 100%;
 }
 
